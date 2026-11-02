@@ -863,32 +863,8 @@ html[data-bar=none] #tabbar{display:none}
 .l-in h1{font-family:var(--display);font-weight:900;line-height:1.1;overflow:hidden;width:100%}
 .l-in em{font:italic 400 30px/1 var(--accent)}
 .l-in p{font:800 15px/1.25 var(--body);max-width:240px}
-.l-sur{display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 15px;border-radius:20px;font:800 15px/1 var(--body);margin-top:4px;flex:none}
-.l-sur .i{width:16px;height:16px}
 .list>.fine,[data-r=discover]>.fine{padding:20px}
 /* la tragaperras */
-.ov.surprise .ov-panel{background:var(--plum)}
-.sz{position:absolute;inset:0;background:var(--hero);color:var(--hero-ink);overflow:hidden;transition:background .12s}
-.sz-art{position:absolute;right:-58px;bottom:146px;width:270px;height:270px;object-fit:contain;transform:rotate(-8deg);transition:transform .3s}
-.sz.spinning .sz-art{transform:rotate(6deg) scale(.9)}
-.sz-in{position:relative;z-index:1;display:flex;flex-direction:column;height:100%;padding:58px 24px calc(14px + var(--safe-b));max-width:760px;margin-inline:auto}
-.sz-k{font:italic 400 38px/1.1 var(--accent);padding-right:50px}
-.sz-box{height:186px;overflow:hidden;margin-top:6px;flex:none}
-.sz-box h2{font:var(--ti) var(--tw) 56px/1.08 var(--tfont);color:var(--title);text-shadow:var(--tshadow);overflow-wrap:normal}
-.sz-det{display:flex;flex-direction:column;gap:10px}
-.sz-det p{font:600 17px/1.3 var(--body);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.sz-det strong{font:700 28px/1.1 var(--display);color:var(--title)}
-.sz-place{display:flex;align-items:center;gap:12px;text-align:left;color:var(--hero-ink);width:100%}
-.sz-place b{display:block;font:800 17px/1.2 var(--body);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.sz-place small{display:block;font:700 14px/1.2 var(--body);opacity:.85;margin-top:2px}
-.sz-place span{min-width:0}
-.sz-place>.i{width:14px;height:14px}
-.sz-btns{display:flex;gap:10px;margin-top:18px;transition:opacity .25s,transform .25s}
-.sz-btns.hide{opacity:0;transform:translateY(24px)}
-.sz-again{flex:none;width:104px;height:58px;border-radius:18px;box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--hero-ink) 60%,transparent);color:var(--hero-ink);font:800 18px/1 var(--body)}
-.sz-want{flex:1;height:58px;border-radius:18px;background:var(--acc);color:var(--acc-ink);font:800 18px/1 var(--body)}
-.sz-x{position:absolute;top:calc(8px + var(--safe-t));right:18px;z-index:3;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,.35);color:#fff;display:grid;place-items:center}
-.sz-x .i{width:16px;height:16px}
 
 /* ---------- primera vez ---------- */
 #intro{position:fixed;inset:0;z-index:95;overflow:hidden;transition:opacity .4s}
@@ -1059,7 +1035,6 @@ html[data-bar=none] #tabbar{display:none}
   .wl-card{padding-inline:40px}
   .wl{background:linear-gradient(135deg,#B8410E,#F0771C 55%,#FFB23F)}
   .lg-card{max-width:640px;width:100%;margin-inline:auto}
-  .sz-art{right:calc(50% - 560px);width:360px;height:360px}
   .cover-body .wrap-s{padding-bottom:30px}
 }
 
@@ -1880,7 +1855,6 @@ const IC = {
   userok:'<circle cx="11" cy="11" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="11" cy="8.5" r="3" fill="currentColor"/><path fill="currentColor" d="M5.5 17c1-2.3 3-3.3 5.5-3.3s4.5 1 5.5 3.3a9 9 0 0 1-11 0z"/><circle cx="18.5" cy="18.5" r="5" fill="currentColor"/><path fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m16.3 18.6 1.6 1.6 2.9-3.2"/>',
   upleft:'<path fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" d="M18 18 6.5 6.5M6.5 15.5v-9h9"/>',
   right:'<path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M4 12h16m-7-7 7 7-7 7"/>',
-  spark:'<path fill="currentColor" d="M10.5 3.5c.8 4.7 2.8 6.7 7.5 7.5-4.7.8-6.7 2.8-7.5 7.5C9.7 13.8 7.7 11.8 3 11c4.7-.8 6.7-2.8 7.5-7.5zM18.5 14.5c.4 2.3 1.4 3.3 3.7 3.7-2.3.4-3.3 1.4-3.7 3.7-.4-2.3-1.4-3.3-3.7-3.7 2.3-.4 3.3-1.4 3.7-3.7z"/>',
   map:'<path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="m9 4-6 2.5v13.5L9 17.5l6 2.5 6-2.5V4l-6 2.5zM9 4v13.5M15 6.5V20"/>',
   checkc:'<circle cx="12" cy="12" r="10" fill="currentColor"/><path fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" d="m7 12.5 3.4 3.4L17 9"/>',
   circle:'<circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.7"/>',
@@ -3683,7 +3657,7 @@ App.factories.order = route => {
 
 /* ================= BUSCAR =================
    La pestaña para decidir qué comer: se compara plato a plato en toda Martos.
-   Igual que SearchView.swift, SearchBands.swift, DishList.swift y SurpriseView.swift. */
+   Igual que SearchView.swift, SearchBands.swift y DishList.swift. */
 
 let _book = null;
 const Book = () => _book || (_book = makeBook(PLACES));
@@ -3951,7 +3925,6 @@ App.factories.list = route => {
     title: () => `${r.title} en Martos · Comilón`,
     html: () => {
       const list = Book().forRoute(r), places = new Set(list.map(d => d.place.slug)).size, from = (list.find(d => d.price != null) || {}).price;
-      const pool = list.filter(d => d.price != null && d.isFood);
       return `<div class="l-nav${dark ? ' dark' : ''}" style="background:${bg}"><div class="wrap"><a class="glass icon" href="#buscar" data-a="back" data-t="nav-back" aria-label="Atrás" style="color:${ink}">${ic('back')}</a></div></div>
       <header class="l-head${dark ? ' dark' : ''}" style="background:${bg};color:${ink}">
         ${a ? slidingWords(a.word + ' · ', a.tone, 110, 24, 'l-words') : ''}
@@ -3961,7 +3934,6 @@ App.factories.list = route => {
           <em>en Martos</em>
           <i class="sp"></i>
           <p data-t="list-summary">${esc(summary(list.length, places, from))}</p>
-          ${pool.length > 1 ? `<button class="l-sur press" type="button" data-a="surprise" data-t="list-surprise" style="background:${ink};color:${bg}">${ic('spark')}<span>Elige tú por mí</span></button>` : ''}
         </div>
       </header>
       <div class="wrap res" data-r="results">${body()}</div>
@@ -3977,65 +3949,11 @@ App.factories.list = route => {
     get actions(){ return {
       back: () => App.back('#buscar'),
       dish: el => openDishByID(el.dataset.id),
-      surprise: () => openSurprise(Book().forRoute(r).filter(d => d.price != null && d.isFood)),
       searchcart: el => openCart(BY[el.dataset.s]),
       ...results.actions(() => morph($('[data-r=results]', scr.el), body())),
     }; },
   };
 };
-
-/* ---------- "Te lo elijo yo": la tragaperras de la cena ---------- */
-function openSurprise(dishes){
-  const now = new Date(), open = dishes.filter(d => status(d.place, now).open === true), list = open.length ? open : dishes;
-  if (!list.length) return;
-  const pick = arr => arr[Math.floor(Math.random() * arr.length)];
-  let current = null, spinning = true, round = 0;
-  const o = Ov.open({
-    cls:'full surprise', label:'Te lo elijo yo', modal:true, drag:false,
-    html: () => {
-      if (!current) return `<button class="sz-x" type="button" data-a="close" data-t="surprise-close" aria-label="Cerrar">${ic('x')}</button>`;
-      const d = current, p = d.place, st = styleOf(p), t = p.theme, s = status(p, now), art = dishArt(d);
-      return `<div class="sz${spinning ? ' spinning' : ''}" style="${st.vars}">${pattern(t.pattern, t.heroInk)}
-        ${art ? `<img class="sz-art" src="${COMIDA[art]}" alt="">` : ''}
-        <div class="sz-in">
-          <p class="sz-k" data-t="surprise-kicker">${spinning ? 'Pensando…' : isLunch(now) ? 'Hoy comes' : 'Esta noche cenas'}</p>
-          <div class="sz-box"><h2 data-t="surprise-dish" data-fit="3" data-min=".4">${esc(titleCase(d.name, st))}</h2></div>
-          ${!spinning ? `<div class="sz-det pop-in">${d.row.desc ? `<p>${esc(d.row.desc)}</p>` : ''}<strong>${esc(priceText(d.row))}</strong></div>` : ''}
-          <i class="sp"></i>
-          <button class="sz-place" type="button" data-a="place" data-t="surprise-place"${spinning ? ' disabled' : ''}>${logo(p, 54, 14)}<span><b>${esc(p.name)}</b><small>${esc(s.text)}</small></span><i class="sp"></i>${!spinning ? ic('next') : ''}</button>
-          <div class="sz-btns${spinning ? ' hide' : ''}"><button class="sz-again press" type="button" data-a="again" data-t="surprise-again"${spinning ? ' disabled' : ''}>Otro</button><button class="sz-want press" type="button" data-a="want" data-t="surprise-want"${spinning ? ' disabled' : ''}>Lo quiero</button></div>
-        </div>
-      </div><button class="sz-x" type="button" data-a="close" data-t="surprise-close" aria-label="Cerrar">${ic('x')}</button>`;
-    },
-    onClose: () => { round = -1; },
-    actions: {
-      close: () => Ov.close(),
-      again: () => spin(),
-      want: () => { const d = current; Ov.close().then(() => setTimeout(() => openDish(d.place, d.ci, d.ri), 60)); },
-      place: () => { const p = current.place; App.go('#' + p.slug); },
-    },
-    after: panel => { const h = $('[data-t=surprise-dish]', panel); if (h) fitText(h); },
-  });
-  /* Empieza rápido y va frenando. El plato final no repite el local de antes, si hay de dónde elegir. */
-  async function spin(){
-    const me = ++round, last = current;
-    spinning = true;
-    const others = list.filter(d => !last || d.place !== last.place), final = pick(others.length ? others : list);
-    if (!REDUCED){
-      let wait = 50;
-      for (let i = 0; i < 14; i++){
-        if (round !== me) return;
-        current = pick(list); o.refresh();
-        await new Promise(r => setTimeout(r, wait));
-        wait *= 1.15;
-      }
-    }
-    if (round !== me) return;
-    current = final; spinning = false; o.refresh();
-    if (navigator.vibrate) navigator.vibrate(14);
-  }
-  spin();
-}
 
 /* ================= CUENTA =================
    Sesión, datos, direcciones, favoritos, ayuda y textos legales. Igual que AccountViews.swift y TabsViews.swift. */
